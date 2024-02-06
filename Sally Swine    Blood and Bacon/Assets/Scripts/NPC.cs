@@ -66,4 +66,9 @@ public class NPC : MonoBehaviour
         // Now, after the entire dialogue is completed, destroy the GameObject
         Destroy(gameObject);
     }
+
+    
+        
+
+  
 }
