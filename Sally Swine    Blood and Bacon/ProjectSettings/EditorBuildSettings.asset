@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Outside - Field.unity
     guid: 298eb9bff9163f44097aa900a5c277a8
+  - enabled: 1
+    path: Assets/Scenes/Puzzle #1.unity
+    guid: 082bfda157abbe8428f27aaf1c340460
   m_configObjects: {}
