@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5f; 
+    public float moveSpeed = 5f;
 
     void Update()
     {
@@ -16,4 +16,4 @@ public class PlayerController : MonoBehaviour
         transform.Translate(movement * moveSpeed * Time.deltaTime);
     }
 
-} 
+}
