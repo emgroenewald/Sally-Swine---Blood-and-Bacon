@@ -1,11 +1,15 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MainManager : MonoBehaviour
 {
+
+    public static Dictionary<string, bool> DialogDict = new Dictionary<string, bool>();
     public static bool LivingRoom = false;
+    public static bool MudPile;
+
     public static MainManager Instance;
+
 
     private void Awake()
     {

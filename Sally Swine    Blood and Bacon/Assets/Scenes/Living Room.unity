@@ -3217,6 +3217,7 @@ MonoBehaviour:
   - Gavin told my parents about my disected bug collection. My entire family beat
     me..
   - THEYRE ALL GONNA PAY..
+  scene: Living Room
   letterSpeed: 0.05
 --- !u!212 &2083326532
 SpriteRenderer:

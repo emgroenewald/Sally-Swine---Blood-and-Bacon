@@ -1,4 +1,6 @@
 using System.Collections;
+using System.Linq;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +10,7 @@ public class NPC : MonoBehaviour
     public Text dialogueText;
     public string[] dialogue;
     private int index;
+    public string scene;
 
 
     public float letterSpeed = 0.05f;
@@ -43,19 +46,24 @@ public class NPC : MonoBehaviour
 
     IEnumerator DisplayDialogue()
     {
-        if (MainManager.LivingRoom == false)
+
+       
+        if (!MainManager.DialogDict.ContainsKey(scene))
+            MainManager.DialogDict.Add(scene, false);
+        if(!MainManager.DialogDict[scene])
         {
-            MainManager.LivingRoom = true;
+            MainManager.DialogDict[scene] = true;
+            var text = dialogue;
             //GameObject.FindGameObjectWithTag("Manager").GetComponent<MainManager>().
             isDialogueActive = true;
 
-            for (index = 0; index < dialogue.Length; index++)
+            for (index = 0; index < text.Length; index++)
             {
                 dialogueText.text = "";
 
-                for (int j = 0; j < dialogue[index].Length; j++)
+                for (int j = 0; j < text[index].Length; j++)
                 {
-                    dialogueText.text += dialogue[index][j];
+                    dialogueText.text += text[index][j];
                     yield return new WaitForSeconds(letterSpeed);
                 }
 
