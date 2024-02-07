@@ -3,26 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartChange : MonoBehaviour
+public class SpaceKeySceneLoader : MonoBehaviour
 {
-    public int sceneBuildIndex;
+    public int sceneBuildIndex; // Set the scene build index in the Unity Editor
 
-
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        print("Trigger Entered");
-        SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
-        
-    }
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
+        // Check for the space key press
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            LoadScene();
+        }
+    }
 
+    // This method is called to load the scene
+    void LoadScene()
+    {
+        SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
     }
 }
