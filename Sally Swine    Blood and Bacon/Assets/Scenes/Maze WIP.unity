@@ -1274,6 +1274,7 @@ GameObject:
   - component: {fileID: 1039108561}
   - component: {fileID: 1039108560}
   - component: {fileID: 1039108566}
+  - component: {fileID: 1039108567}
   m_Layer: 0
   m_Name: 'Sally Swine : Baconator'
   m_TagString: Player
@@ -1491,12 +1492,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_Sprite: {fileID: 21300000, guid: f16f301a4d7aa124cb1cd3996d309b71, type: 3}
+  m_Sprite: {fileID: -486293165, guid: d7a718cc6a4c0bc42a820d2c8bef8555, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 1.5, y: 2.3333333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1529,6 +1530,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b115aa06fcf2c0b42886af77ab3b09e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1039108567
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039108559}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 473da48c5f7423b46b528c5014b68fe3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1091553866
 GameObject:
   m_ObjectHideFlags: 0
