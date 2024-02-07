@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MainManager : MonoBehaviour
 {
+    public static bool LivingRoom = false;
     public static MainManager Instance;
 
     private void Awake()

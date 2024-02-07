@@ -9,6 +9,7 @@ public class NPC : MonoBehaviour
     public string[] dialogue;
     private int index;
 
+
     public float letterSpeed = 0.05f;
     private bool playerIsClose;
     private bool isDialogueActive = false;
@@ -42,29 +43,34 @@ public class NPC : MonoBehaviour
 
     IEnumerator DisplayDialogue()
     {
-        isDialogueActive = true;
-
-        for (index = 0; index < dialogue.Length; index++)
+        if (MainManager.LivingRoom == false)
         {
-            dialogueText.text = "";
+            MainManager.LivingRoom = true;
+            //GameObject.FindGameObjectWithTag("Manager").GetComponent<MainManager>().
+            isDialogueActive = true;
 
-            for (int j = 0; j < dialogue[index].Length; j++)
+            for (index = 0; index < dialogue.Length; index++)
             {
-                dialogueText.text += dialogue[index][j];
-                yield return new WaitForSeconds(letterSpeed);
+                dialogueText.text = "";
+
+                for (int j = 0; j < dialogue[index].Length; j++)
+                {
+                    dialogueText.text += dialogue[index][j];
+                    yield return new WaitForSeconds(letterSpeed);
+                }
+
+                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
             }
 
+            // Ensure that the player presses 'E' to continue after the last dialogue
             yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
+
+            dialoguePanel.SetActive(false);
+            isDialogueActive = false;
+
+            // Now, after the entire dialogue is completed, destroy the GameObject
+            Destroy(gameObject);
         }
-
-        // Ensure that the player presses 'E' to continue after the last dialogue
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
-
-        dialoguePanel.SetActive(false);
-        isDialogueActive = false;
-
-        // Now, after the entire dialogue is completed, destroy the GameObject
-        Destroy(gameObject);
     }
 
     
