@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Dialogue
   - Manager
+  - Teleporter
   layers:
   - Default
   - TransparentFX
