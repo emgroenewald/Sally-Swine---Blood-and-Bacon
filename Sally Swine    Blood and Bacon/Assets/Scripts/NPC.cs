@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Linq;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -47,10 +45,10 @@ public class NPC : MonoBehaviour
     IEnumerator DisplayDialogue()
     {
 
-       
+
         if (!MainManager.DialogDict.ContainsKey(scene))
             MainManager.DialogDict.Add(scene, false);
-        if(!MainManager.DialogDict[scene])
+        if (!MainManager.DialogDict[scene])
         {
             MainManager.DialogDict[scene] = true;
             var text = dialogue;
@@ -81,8 +79,8 @@ public class NPC : MonoBehaviour
         }
     }
 
-    
-        
 
-  
+
+
+
 }
