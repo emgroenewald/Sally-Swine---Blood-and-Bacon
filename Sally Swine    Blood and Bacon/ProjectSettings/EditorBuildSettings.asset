@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Maze WIP.unity
     guid: 8168f74242d988e48b7beefe7c7cfc93
+  - enabled: 1
+    path: Assets/Scenes/Mud Field.unity
+    guid: 37c295d079aa64e478f2612a6f127513
+  - enabled: 1
+    path: Assets/Scenes/Hedge Maze.unity
+    guid: 0d074845048eb4e4794544bcc4dc96c8
   m_configObjects: {}
