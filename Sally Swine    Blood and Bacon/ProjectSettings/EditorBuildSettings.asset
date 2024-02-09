@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hallway - Entrance.unity
     guid: 74f5af1ff2123f54da310212f0c361b9
+  - enabled: 1
+    path: Assets/Scenes/ControlsScene.unity
+    guid: 3cd7967eb48b8a74c97b51ac940af9e2
   m_configObjects: {}
