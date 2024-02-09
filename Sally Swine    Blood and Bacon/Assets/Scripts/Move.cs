@@ -1,16 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Move : MonoBehaviour
 {
     [SerializeField] float speed = 3;
+    [SerializeField] private UI_Inventory uiInventory;
 
     Rigidbody2D rb;
     Vector2 inputDir;
 
     Animator animator;
+
+    private Inventory inventory;
+
+    private void Awake()
+    {
+        inventory = new Inventory();
+        uiInventory.SetInventory(inventory);
+
+    }
 
     void Start()
     {
