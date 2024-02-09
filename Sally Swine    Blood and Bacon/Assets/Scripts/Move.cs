@@ -18,8 +18,7 @@ public class Move : MonoBehaviour
 
     private void Awake()
     {
-        inventory = new Inventory();
-        uiInventory.SetInventory(inventory);
+       
 
     }
 
