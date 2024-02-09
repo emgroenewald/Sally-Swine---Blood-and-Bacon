@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ControlsScene.unity
     guid: 3cd7967eb48b8a74c97b51ac940af9e2
+  - enabled: 1
+    path: Assets/Scenes/Mudfield2.unity
+    guid: 1bbd9c96f50cd2a49bb58298b2e27f73
   m_configObjects: {}
