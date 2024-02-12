@@ -8,7 +8,7 @@ public class UI_Inventory : MonoBehaviour
 
     private Inventory inventory;
     private Transform itemSlotContainer;
-    private Transform itemSlotTemplate;
+    public Transform itemSlotTemplate;
 
     private void Awake()
     {
