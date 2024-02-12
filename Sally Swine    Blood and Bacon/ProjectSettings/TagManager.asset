@@ -8,6 +8,7 @@ TagManager:
   - Manager
   - Teleporter
   - InteractionPopUp
+  - Item
   layers:
   - Default
   - TransparentFX

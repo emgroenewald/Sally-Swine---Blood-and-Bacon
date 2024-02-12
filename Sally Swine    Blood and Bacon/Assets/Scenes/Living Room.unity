@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneBuildIndex: 10
+  RequiredInventoryItem: 
 --- !u!61 &56528677
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2233,14 +2234,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 238265500434181668, guid: 7d25d8a2de09d30498adb6a93eef1dd4, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 80f37d83626ab284d8d0e0499a923fc6, type: 3}
-    - target: {fileID: 238265500434181668, guid: 7d25d8a2de09d30498adb6a93eef1dd4, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 1661314336145928163, guid: 7d25d8a2de09d30498adb6a93eef1dd4, type: 3}
       propertyPath: m_Name
       value: Canvas
