@@ -351,8 +351,8 @@ GameObject:
   m_Component:
   - component: {fileID: 390349269}
   - component: {fileID: 390349272}
-  - component: {fileID: 390349271}
   - component: {fileID: 390349270}
+  - component: {fileID: 390349271}
   m_Layer: 0
   m_Name: TeleportMud2
   m_TagString: Teleporter
@@ -2124,7 +2124,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3388868393369380927, guid: 6e9e372fd9b4373438bf46bd0d395687, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5551087579603451299, guid: 6e9e372fd9b4373438bf46bd0d395687, type: 3}
       propertyPath: m_Name
@@ -2316,7 +2316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1915212369}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: MudTeleporters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
