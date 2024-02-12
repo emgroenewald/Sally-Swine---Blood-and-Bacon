@@ -1411,7 +1411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1284840042}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: MudTeleporters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2412,8 +2412,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2128793708}
   - component: {fileID: 2128793707}
-  - component: {fileID: 2128793706}
   - component: {fileID: 2128793709}
+  - component: {fileID: 2128793706}
   m_Layer: 0
   m_Name: TeleportMud2
   m_TagString: Teleporter
