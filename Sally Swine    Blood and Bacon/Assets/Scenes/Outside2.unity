@@ -1355,6 +1355,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUpCanvas: {fileID: 1845118368}
+  inventoryName: 
+  RequiredInventoryItem: 
 --- !u!212 &1194634019
 SpriteRenderer:
   m_ObjectHideFlags: 0
