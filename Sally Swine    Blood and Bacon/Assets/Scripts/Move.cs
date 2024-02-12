@@ -30,6 +30,8 @@ public class Move : MonoBehaviour
 
     void Update()
     {
+        //if (inputDir.y > 0 && MainManager.Inventory.Contains("Bacon"))
+        //    return;
         rb.velocity = inputDir * speed;
 
         // Determine the animation parameters based on the vertical input direction

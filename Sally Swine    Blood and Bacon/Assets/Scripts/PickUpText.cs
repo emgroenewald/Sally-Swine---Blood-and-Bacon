@@ -5,10 +5,11 @@ public class PickUpText : MonoBehaviour
     [SerializeField]
     private Canvas pickUpCanvas;
     private bool pickUpAllowed;
+    public string inventoryName;
+    public string RequiredInventoryItem;
 
     void Start()
     {
-        // Ensure the canvas is initially hidden
         pickUpCanvas.gameObject.SetActive(false);
     }
 
@@ -16,8 +17,10 @@ public class PickUpText : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            
             SetPickUpCanvas(true);
-            pickUpAllowed = true;
+            pickUpAllowed = string.IsNullOrEmpty(RequiredInventoryItem) || MainManager.Inventory.Contains(RequiredInventoryItem);
+            // pickUpAllowed = MainManager.Inventory.Contains("Cheese");
         }
     }
 
@@ -25,7 +28,7 @@ public class PickUpText : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            SetPickUpCanvas(false);
+            //SetPickUpCanvas(false);
             pickUpAllowed = false;
         }
     }
@@ -46,6 +49,7 @@ public class PickUpText : MonoBehaviour
     private void PickUp()
     {
         // Add your pickup logic here
+        MainManager.Inventory.Add(inventoryName);
         Destroy(gameObject);
     }
 }

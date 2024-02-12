@@ -6,16 +6,16 @@ using UnityEngine.SceneManagement;
 public class LevelChange : MonoBehaviour
 {
     public int sceneBuildIndex;
-
+    public string RequiredInventoryItem;
 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         print("Trigger Entered");
 
+        bool canChange = string.IsNullOrEmpty(RequiredInventoryItem) || MainManager.Inventory.Contains(RequiredInventoryItem);
 
-
-        if(other.tag == "Player")
+        if(other.tag == "Player" && canChange)
         {
             print("Switching scene to " + sceneBuildIndex);
             SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
