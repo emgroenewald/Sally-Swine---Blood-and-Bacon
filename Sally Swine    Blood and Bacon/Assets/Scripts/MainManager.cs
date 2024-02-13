@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class MainManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class MainManager : MonoBehaviour
     public static bool MudPile;
     public static Dictionary<string, bool> Slots = new Dictionary<string, bool>() { { "Red", false }, { "Green", false }, { "Blue", false } };
     public static MainManager Instance;
+    public static Vector3 SallyPosition;
 
 
     private void Awake()

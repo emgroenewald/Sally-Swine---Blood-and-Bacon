@@ -588,6 +588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneBuildIndex: 0
   RequiredInventoryItem: 
+  altSceneIndex: -1
 --- !u!61 &186624419
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1325,6 +1326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneBuildIndex: 9
   RequiredInventoryItem: 
+  altSceneIndex: -1
 --- !u!61 &632729383
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1470,6 +1472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneBuildIndex: 7
   RequiredInventoryItem: 
+  altSceneIndex: -1
 --- !u!61 &746444518
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3507,6 +3510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneBuildIndex: 11
   RequiredInventoryItem: 
+  altSceneIndex: -1
 --- !u!61 &1973533609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3652,6 +3656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneBuildIndex: 7
   RequiredInventoryItem: 
+  altSceneIndex: -1
 --- !u!61 &2145941427
 BoxCollider2D:
   m_ObjectHideFlags: 0
