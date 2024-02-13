@@ -7,7 +7,7 @@ public class PuzzleLogic : MonoBehaviour
 {
     [SerializeField] string expectedObjectTag;
     [SerializeField] string slot;
-    
+    bool canPass = MainManager.Slots["Red"] && MainManager.Slots["Blue"] && MainManager.Slots["Green"];
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag(expectedObjectTag))
