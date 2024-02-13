@@ -8,7 +8,7 @@ public class MainManager : MonoBehaviour
     public static List<string> Inventory = new List<string>();
     public static bool LivingRoom = false;
     public static bool MudPile;
-
+    public static Dictionary<string, bool> Slots = new Dictionary<string, bool>();
     public static MainManager Instance;
 
 
