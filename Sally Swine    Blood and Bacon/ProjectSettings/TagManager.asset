@@ -8,6 +8,12 @@ TagManager:
   - Manager
   - Teleporter
   - InteractionPopUp
+  - Blue
+  - Red
+  - Green
+  - FirstSlot
+  - SecondSlot
+  - ThirdSlot
   layers:
   - Default
   - TransparentFX
