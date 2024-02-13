@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 86355451}
   - component: {fileID: 86355452}
   m_Layer: 0
-  m_Name: Green Color
+  m_Name: Green
   m_TagString: Green
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -307,8 +307,8 @@ GameObject:
   - component: {fileID: 104790044}
   - component: {fileID: 104790045}
   m_Layer: 0
-  m_Name: Slot 2
-  m_TagString: SecondSlot
+  m_Name: GreenSlot
+  m_TagString: Green
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -374,7 +374,7 @@ Transform:
   m_GameObject: {fileID: 104790041}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -1.58, z: 0}
+  m_LocalPosition: {x: 0, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -437,9 +437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cea16e4fa4e26d54c90c6a527766d648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirstPuzzle: 0
-  SecondPuzzle: 0
-  ThirdPuzzle: 0
+  expectedObjectTag: Green
+  slot: Green
 --- !u!1 &356968461
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,8 +589,8 @@ GameObject:
   - component: {fileID: 1360861252}
   - component: {fileID: 1360861251}
   m_Layer: 0
-  m_Name: Slot 1
-  m_TagString: FirstSlot
+  m_Name: RedSlot
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -657,7 +656,7 @@ Transform:
   m_GameObject: {fileID: 1360861247}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.45, y: -1.52, z: 0}
+  m_LocalPosition: {x: -2.45, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -675,9 +674,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cea16e4fa4e26d54c90c6a527766d648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirstPuzzle: 0
-  SecondPuzzle: 0
-  ThirdPuzzle: 0
+  expectedObjectTag: Red
+  slot: Red
 --- !u!61 &1360861252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -734,9 +732,10 @@ GameObject:
   - component: {fileID: 1708073204}
   - component: {fileID: 1708073203}
   - component: {fileID: 1708073205}
+  - component: {fileID: 1708073206}
   m_Layer: 0
-  m_Name: Slot 3
-  m_TagString: ThirdSlot
+  m_Name: BlueSlot
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -802,7 +801,7 @@ Transform:
   m_GameObject: {fileID: 1708073202}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.44, y: -1.54, z: 0}
+  m_LocalPosition: {x: 2.45, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -853,6 +852,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1708073206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708073202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cea16e4fa4e26d54c90c6a527766d648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  expectedObjectTag: Blue
+  slot: Blue
 --- !u!1 &1753094150
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,7 +880,7 @@ GameObject:
   - component: {fileID: 1753094154}
   - component: {fileID: 1753094155}
   m_Layer: 0
-  m_Name: Blue Color
+  m_Name: Blue
   m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1036,10 +1049,9 @@ GameObject:
   - component: {fileID: 1957326156}
   - component: {fileID: 1957326158}
   - component: {fileID: 1957326159}
-  - component: {fileID: 1957326160}
   - component: {fileID: 1957326161}
   m_Layer: 0
-  m_Name: RedColor
+  m_Name: Red
   m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1169,21 +1181,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb6869328d4e5c42acf78848969d2a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1957326160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957326155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cea16e4fa4e26d54c90c6a527766d648, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FirstPuzzle: 0
-  SecondPuzzle: 0
-  ThirdPuzzle: 0
 --- !u!50 &1957326161
 Rigidbody2D:
   serializedVersion: 4

@@ -1,12 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PuzzleLogic : MonoBehaviour
 {
-    [SerializeField] string expectedColor;
+    [SerializeField] string expectedObjectTag;
     [SerializeField] string slot;
+    bool canPass = MainManager.Slots["Red"] && MainManager.Slots["Blue"] && MainManager.Slots["Green"];
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (gameObject.CompareTag("expectedColor"))
+        if (collision.CompareTag(expectedObjectTag))
         {
             MainManager.Slots[slot] = true;
         }
@@ -16,3 +20,17 @@ public class PuzzleLogic : MonoBehaviour
         }
     }
 }
+
+public class ScriptToCheckAllColors : MonoBehaviour
+{
+    private void MethodWhereYouWantToCheck()
+    {
+        bool canPass = MainManager.Slots["Red"] && MainManager.Slots["Blue"] && MainManager.Slots["Green"];
+    }
+}
+
+
+
+
+
+
