@@ -1475,7 +1475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneBuildIndex: 10
-  SallyPosition: {x: -5, y: 1, z: 0}
+  SallyPosition: {x: -29, y: 1.09, z: 0}
   SallyAltPosition: {x: 0, y: 0, z: 0}
   RequiredInventoryItem: DeadGavin
   altSceneIndex: 7
