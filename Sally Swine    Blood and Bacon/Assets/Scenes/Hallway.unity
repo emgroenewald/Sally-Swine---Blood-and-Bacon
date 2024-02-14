@@ -1070,7 +1070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneBuildIndex: 6
-  SallyPosition: {x: 0, y: 0, z: 0}
+  SallyPosition: {x: -31.7, y: 0.25, z: 0}
   SallyAltPosition: {x: 0, y: 0, z: 0}
   RequiredInventoryItem: 
   altSceneIndex: -1
@@ -1954,6 +1954,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sally: {fileID: 1694576780}
+--- !u!1 &1783665374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1783665376}
+  - component: {fileID: 1783665375}
+  m_Layer: 0
+  m_Name: SallyStartPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1783665375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783665374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29442353abaec4f40bd768330c1d993b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sally: {fileID: 0}
+--- !u!4 &1783665376
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783665374}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2379259, y: -14.024325, z: -8.455812}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2011997964
 GameObject:
   m_ObjectHideFlags: 0
@@ -2132,3 +2177,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 1694576786}
   - {fileID: 1183771485}
+  - {fileID: 1783665376}
