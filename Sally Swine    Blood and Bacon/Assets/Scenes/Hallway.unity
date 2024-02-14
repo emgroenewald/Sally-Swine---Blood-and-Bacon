@@ -1352,7 +1352,7 @@ MonoBehaviour:
   SallyPosition: {x: 0, y: 0, z: 0}
   SallyAltPosition: {x: 0, y: 0, z: 0}
   RequiredInventoryItem: PuzzleKey
-  altSceneIndex: 17
+  altSceneIndex: 13
 --- !u!61 &1277739647
 BoxCollider2D:
   m_ObjectHideFlags: 0
