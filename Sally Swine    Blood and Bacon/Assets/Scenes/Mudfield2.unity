@@ -740,6 +740,51 @@ Transform:
   - {fileID: 1833445525}
   m_Father: {fileID: 1277417175}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &303205254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 303205256}
+  - component: {fileID: 303205255}
+  m_Layer: 0
+  m_Name: SallyStartPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &303205255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303205254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29442353abaec4f40bd768330c1d993b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sally: {fileID: 1863494110}
+--- !u!4 &303205256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303205254}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.9922097, y: -13.934378, z: -8.415528}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &347658154
 GameObject:
   m_ObjectHideFlags: 0
@@ -3103,7 +3148,7 @@ SpriteRenderer:
   m_Size: {x: 56.038307, y: 32.47626}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1364960225
@@ -4474,6 +4519,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneBuildIndex: 6
+  SallyPosition: {x: 6, y: -16, z: 0}
+  SallyAltPosition: {x: 0, y: 0, z: 0}
+  RequiredInventoryItem: 
+  altSceneIndex: -1
 --- !u!61 &2087904974
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4725,3 +4774,4 @@ SceneRoots:
   - {fileID: 709151262}
   - {fileID: 396817175}
   - {fileID: 1277417175}
+  - {fileID: 303205256}

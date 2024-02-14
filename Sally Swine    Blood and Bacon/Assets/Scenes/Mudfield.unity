@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 28301437}
   - component: {fileID: 28301436}
   - component: {fileID: 28301439}
-  - component: {fileID: 28301438}
+  - component: {fileID: 28301440}
   m_Layer: 0
   m_Name: Gavin swine
   m_TagString: Untagged
@@ -209,18 +209,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -720}
---- !u!114 &28301438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28301434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4808258ae0a27a54587d945f2eda326e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &28301439
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -266,6 +254,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6666667, y: 2.6666667}
   m_EdgeRadius: 0
+--- !u!114 &28301440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28301434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab8879d107030841a78e7f31bf226b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneBuildIndex: 14
+  SallyPosition: {x: 0, y: 0, z: 0}
+  SallyAltPosition: {x: 0, y: 0, z: 0}
+  RequiredInventoryItem: 
+  altSceneIndex: -1
 --- !u!1 &49972937
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,6 +1322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneBuildIndex: 6
+  SallyPosition: {x: 6, y: -16, z: 0}
+  SallyAltPosition: {x: 0, y: 0, z: 0}
   RequiredInventoryItem: 
   altSceneIndex: -1
 --- !u!61 &375205071
@@ -4244,6 +4251,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1679063062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1679063064}
+  - component: {fileID: 1679063063}
+  m_Layer: 0
+  m_Name: SallyStartPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1679063063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679063062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29442353abaec4f40bd768330c1d993b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sally: {fileID: 2061419317}
+--- !u!4 &1679063064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679063062}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.9922097, y: -13.934378, z: -8.415528}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1695076659
 GameObject:
   m_ObjectHideFlags: 0
@@ -4784,3 +4836,4 @@ SceneRoots:
   - {fileID: 963982229}
   - {fileID: 28301437}
   - {fileID: 164742832}
+  - {fileID: 1679063064}
