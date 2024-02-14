@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Start Screen.unity
     guid: 7d02974a211a5cb4f9f98edad9013079
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/Controls Screen.unity
     guid: eef926b6804cf0944b0ca76b3a6d400c
   - enabled: 1
     path: Assets/Scenes/Living Room.unity
@@ -65,4 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QTE.unity
     guid: 62fcc91e4d4e5ce42a57d035274409c0
+  - enabled: 1
+    path: Assets/Scenes/Inside Shed.unity
+    guid: 818515928406be64cb862175efeafc17
   m_configObjects: {}
