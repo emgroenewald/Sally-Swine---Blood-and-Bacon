@@ -7,10 +7,17 @@ public class PickUpText : MonoBehaviour
     private bool pickUpAllowed;
     public string inventoryName;
     public string RequiredInventoryItem;
+    public Renderer spriteRenderer;
 
     void Start()
     {
-        pickUpCanvas.gameObject.SetActive(false);
+        //pickUpCanvas.gameObject.SetActive(false);
+       
+    }
+    private void Awake()
+    {
+        spriteRenderer.enabled = !MainManager.Inventory.Contains(inventoryName);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -18,7 +25,7 @@ public class PickUpText : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             
-            SetPickUpCanvas(true);
+            //SetPickUpCanvas(true);
             pickUpAllowed = string.IsNullOrEmpty(RequiredInventoryItem) || MainManager.Inventory.Contains(RequiredInventoryItem);
             // pickUpAllowed = MainManager.Inventory.Contains("Cheese");
         }
@@ -41,10 +48,10 @@ public class PickUpText : MonoBehaviour
         }
     }
 
-    private void SetPickUpCanvas(bool isActive)
-    {
-        pickUpCanvas.gameObject.SetActive(isActive);
-    }
+    //private void SetPickUpCanvas(bool isActive)
+    //{
+    //    pickUpCanvas.gameObject.SetActive(isActive);
+    //}
 
     private void PickUp()
     {

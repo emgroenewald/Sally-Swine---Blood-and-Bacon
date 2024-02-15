@@ -1790,8 +1790,8 @@ MonoBehaviour:
   sceneBuildIndex: 10
   SallyPosition: {x: 0, y: 0, z: 0}
   SallyAltPosition: {x: 0, y: 0, z: 0}
-  RequiredInventoryItem: DeadGavin
-  altSceneIndex: 11
+  RequiredInventoryItem: 
+  altSceneIndex: -1
 --- !u!61 &1097589130
 BoxCollider2D:
   m_ObjectHideFlags: 0

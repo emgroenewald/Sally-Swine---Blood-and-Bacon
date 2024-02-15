@@ -133,8 +133,9 @@ GameObject:
   m_Component:
   - component: {fileID: 28301437}
   - component: {fileID: 28301436}
-  - component: {fileID: 28301439}
   - component: {fileID: 28301440}
+  - component: {fileID: 28301441}
+  - component: {fileID: 28301442}
   m_Layer: 0
   m_Name: Gavin swine
   m_TagString: Untagged
@@ -209,7 +210,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -720}
---- !u!61 &28301439
+--- !u!114 &28301440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28301434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab8879d107030841a78e7f31bf226b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneBuildIndex: 12
+  SallyPosition: {x: 0, y: 0, z: 0}
+  SallyAltPosition: {x: 0, y: 0, z: 0}
+  RequiredInventoryItem: 
+  altSceneIndex: -1
+--- !u!114 &28301441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28301434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e3703163a4cdb4cbec450fd0a078dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsinRange: 0
+  interactKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 28301440}
+        m_TargetAssemblyTypeName: LevelChange, Assembly-CSharp
+        m_MethodName: ChangeLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!61 &28301442
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,10 +285,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.03507805, y: -0.23677793}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -252,25 +299,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6666667, y: 2.6666667}
+  m_Size: {x: 0.7547226, y: 0.78980154}
   m_EdgeRadius: 0
---- !u!114 &28301440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28301434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eab8879d107030841a78e7f31bf226b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneBuildIndex: 14
-  SallyPosition: {x: 0, y: 0, z: 0}
-  SallyAltPosition: {x: 0, y: 0, z: 0}
-  RequiredInventoryItem: 
-  altSceneIndex: -1
 --- !u!1 &49972937
 GameObject:
   m_ObjectHideFlags: 0
@@ -6051,9 +6081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneBuildIndex: 6
-
-  SallyPosition: {x: 6, y: -16, z: 0}
-
+  SallyPosition: {x: 0, y: 0, z: 0}
   SallyAltPosition: {x: 0, y: 0, z: 0}
   RequiredInventoryItem: 
   altSceneIndex: -1
@@ -9552,7 +9580,6 @@ SceneRoots:
   - {fileID: 963982229}
   - {fileID: 28301437}
   - {fileID: 164742832}
-
   - {fileID: 1679063064}
   - {fileID: 171691124}
-
+  - {fileID: 78188756}

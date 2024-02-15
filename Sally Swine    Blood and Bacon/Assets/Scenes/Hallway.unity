@@ -1351,8 +1351,8 @@ MonoBehaviour:
   sceneBuildIndex: 4
   SallyPosition: {x: 0, y: 0, z: 0}
   SallyAltPosition: {x: 0, y: 0, z: 0}
-  RequiredInventoryItem: PuzzleKey
-  altSceneIndex: 13
+  RequiredInventoryItem: 
+  altSceneIndex: -1
 --- !u!61 &1277739647
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1983,7 +1983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29442353abaec4f40bd768330c1d993b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sally: {fileID: 0}
+  Sally: {fileID: 1694576780}
 --- !u!4 &1783665376
 Transform:
   m_ObjectHideFlags: 0

@@ -33,6 +33,10 @@ public class LevelChange : MonoBehaviour
             SceneManager.LoadScene(altSceneIndex, LoadSceneMode.Single);
         }
     }
+    public void ChangeLevel()
+    {
+        SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
+    }
     void Start()
     {
         

@@ -57,9 +57,9 @@ public class QTE_Ring : MonoBehaviour
             if (eventSuccess == "yes")
             {
                 MainManager.Inventory.Add("DeadGavin");
-                print("Switching scene to " + 10);
+                print("Switching scene to " + 9);
                 
-                SceneManager.LoadScene(10, LoadSceneMode.Single);
+                SceneManager.LoadScene(9, LoadSceneMode.Single);
 
             }
             Debug.Log(eventSuccess);
