@@ -2187,7 +2187,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneBuildIndex: 3
+
   SallyPosition: {x: 0, y: 0, z: 0}
+
+  SallyPosition: {x: 1, y: 14, z: 0}
+
   SallyAltPosition: {x: 0, y: 0, z: 0}
   RequiredInventoryItem: 
   altSceneIndex: -1

@@ -586,8 +586,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab8879d107030841a78e7f31bf226b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneBuildIndex: 0
-  SallyPosition: {x: 0, y: 0, z: 0}
+
+  sceneBuildIndex: 12
+  SallyPosition: {x: -1, y: -7, z: 0}
+
   SallyAltPosition: {x: 0, y: 0, z: 0}
   RequiredInventoryItem: 
   altSceneIndex: -1
@@ -1326,7 +1328,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab8879d107030841a78e7f31bf226b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneBuildIndex: 9
+
+  sceneBuildIndex: 8
+
   SallyPosition: {x: 0, y: 0, z: 0}
   SallyAltPosition: {x: 0, y: 0, z: 0}
   RequiredInventoryItem: 
@@ -1474,11 +1478,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab8879d107030841a78e7f31bf226b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneBuildIndex: 7
-  SallyPosition: {x: 0, y: 0, z: 0}
+
+  sceneBuildIndex: 10
+  SallyPosition: {x: -29, y: 1.09, z: 0}
   SallyAltPosition: {x: 0, y: 0, z: 0}
-  RequiredInventoryItem: 
-  altSceneIndex: -1
+  RequiredInventoryItem: DeadGavin
+  altSceneIndex: 7
+
 --- !u!61 &746444518
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1974,7 +1980,7 @@ Transform:
   m_GameObject: {fileID: 774333253}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -31.7, y: 0.25, z: 0}
+  m_LocalPosition: {x: -16, y: -29, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2522,6 +2528,51 @@ Transform:
   - {fileID: 785988522}
   - {fileID: 73948304}
   - {fileID: 177256551}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1297280620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1297280622}
+  - component: {fileID: 1297280621}
+  m_Layer: 0
+  m_Name: SallyStartPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1297280621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297280620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29442353abaec4f40bd768330c1d993b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sally: {fileID: 774333253}
+--- !u!4 &1297280622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297280620}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.9922097, y: -13.934378, z: -8.415528}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1335598228
@@ -8426,8 +8477,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab8879d107030841a78e7f31bf226b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneBuildIndex: 11
-  SallyPosition: {x: 0, y: 0, z: 0}
+
+  sceneBuildIndex: 3
+  SallyPosition: {x: -2, y: -15, z: 0}
+
   SallyAltPosition: {x: 0, y: 0, z: 0}
   RequiredInventoryItem: 
   altSceneIndex: -1
@@ -8705,4 +8758,6 @@ SceneRoots:
   - {fileID: 186624421}
   - {fileID: 632729385}
   - {fileID: 746444520}
-  - {fileID: 1222458575}
+
+  - {fileID: 1297280622}
+

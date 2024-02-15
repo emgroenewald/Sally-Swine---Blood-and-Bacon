@@ -168,8 +168,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab8879d107030841a78e7f31bf226b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneBuildIndex: 10
-  SallyPosition: {x: 0, y: 0, z: 0}
+
+  sceneBuildIndex: 3
+  SallyPosition: {x: 8, y: -14, z: 0}
+
   SallyAltPosition: {x: 0, y: 0, z: 0}
   RequiredInventoryItem: 
   altSceneIndex: -1
