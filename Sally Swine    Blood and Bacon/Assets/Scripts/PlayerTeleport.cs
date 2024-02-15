@@ -1,24 +1,20 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerTeleport : MonoBehaviour
 {
     private GameObject currentTeleporter;
 
-
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (currentTeleporter != null)
         {
-            transform.position = currentTeleporter.GetComponent<Teleport>().GetDestination().position;
+            StartCoroutine(TeleportWithDelay(currentTeleporter.GetComponent<Teleport>().GetDestination().position, 1f));
         }
     }
 
@@ -39,5 +35,11 @@ public class PlayerTeleport : MonoBehaviour
                 currentTeleporter = null;
             }
         }
+    }
+
+    IEnumerator TeleportWithDelay(Vector3 destination, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        transform.position = destination;
     }
 }
