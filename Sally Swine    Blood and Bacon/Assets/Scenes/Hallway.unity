@@ -1611,7 +1611,7 @@ MonoBehaviour:
   sceneBuildIndex: 5
   SallyPosition: {x: 0, y: 0, z: 0}
   SallyAltPosition: {x: 0, y: 0, z: 0}
-  RequiredInventoryItem: 
+  RequiredInventoryItem: Shotgun
   altSceneIndex: -1
 --- !u!61 &1666621778
 BoxCollider2D:

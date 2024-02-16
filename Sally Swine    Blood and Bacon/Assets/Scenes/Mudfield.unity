@@ -133,8 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 28301437}
   - component: {fileID: 28301436}
-  - component: {fileID: 28301440}
   - component: {fileID: 28301441}
+  - component: {fileID: 28301440}
   - component: {fileID: 28301442}
   m_Layer: 0
   m_Name: Gavin swine
@@ -239,7 +239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e3703163a4cdb4cbec450fd0a078dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsinRange: 0
+  IsinRange: 1
+  RequiredInventoryItem: 
   interactKey: 101
   interactAction:
     m_PersistentCalls:
