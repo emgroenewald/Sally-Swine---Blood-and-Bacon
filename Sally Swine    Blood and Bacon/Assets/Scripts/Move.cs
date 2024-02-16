@@ -8,7 +8,7 @@ public class Move : MonoBehaviour
 {
     [SerializeField] float speed = 3;
     [SerializeField] private UI_Inventory uiInventory;
-
+    SpriteRenderer sprite;
     Rigidbody2D rb;
     Vector2 inputDir;
 
@@ -26,6 +26,7 @@ public class Move : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -39,7 +40,7 @@ public class Move : MonoBehaviour
         {
             bool isWalkingUp = inputDir.y > 0;
             bool isWalkingDown = inputDir.y < 0;
-
+          
             animator.SetBool("walkingUp", isWalkingUp);
             animator.SetBool("walkingDown", isWalkingDown);
 
@@ -51,5 +52,14 @@ public class Move : MonoBehaviour
     public void SetInputDir(InputAction.CallbackContext context)
     {
         inputDir = context.ReadValue<Vector2>();
+
+        if (inputDir.x < 0 && sprite.flipX)
+        {
+            sprite.flipX = false;
+        }
+        if (inputDir.x > 0 && sprite.flipX)
+        {
+            sprite.flipX = true;
+        }
     }
 }

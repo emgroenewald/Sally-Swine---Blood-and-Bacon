@@ -7,6 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
 
     public bool IsinRange;
+    public string RequiredInventoryItem;
     public KeyCode interactKey;
     public UnityEvent interactAction;
     void Start()
@@ -30,12 +31,12 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            IsinRange = true;
+            IsinRange = string.IsNullOrEmpty(RequiredInventoryItem) || MainManager.Inventory.Contains(RequiredInventoryItem);
             Debug.Log("Player now in range");
         }
     }
 
-    private void nTriggerExit(Collider2D other)
+    private void OnTriggerExit(Collider other)
     {
         IsinRange = false;
             Debug.Log("Player now not in range");
