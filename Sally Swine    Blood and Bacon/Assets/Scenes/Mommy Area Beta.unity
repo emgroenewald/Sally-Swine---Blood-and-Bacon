@@ -1072,6 +1072,7 @@ GameObject:
   - component: {fileID: 445817560}
   - component: {fileID: 445817565}
   - component: {fileID: 445817559}
+  - component: {fileID: 445817566}
   m_Layer: 0
   m_Name: Mommy swine
   m_TagString: Untagged
@@ -1089,7 +1090,7 @@ Animator:
   m_GameObject: {fileID: 445817558}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7f33a11e19fb4f4d8ec102bfe13b8e8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1302,6 +1303,18 @@ MonoBehaviour:
   spriteRender: {fileID: 445817562}
   Alive: {fileID: 21300000, guid: b1c8b833650f1ee4b8237b486edf5c19, type: 3}
   Dead: {fileID: 21300000, guid: 3e5ad2652bfd5e1488fa2a8210650118, type: 3}
+--- !u!114 &445817566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445817558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a12bc7fc25bba7947a2f65f452654b12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &520033790
 GameObject:
   m_ObjectHideFlags: 0
